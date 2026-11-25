@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Four Muses — Heirloom Rugs, Made to Order</title>
-<meta name="description" content="Heirloom rugs, hand-knotted to order in West Palm Beach. Each piece is begun only after it's claimed — never mass produced, never warehoused." />
+<title>Four Muses — Hand-Knotted Rugs for Interior Designers</title>
+<meta name="description" content="271 hand-knotted rug designs, made to order in India in 8–10 weeks, with select pieces in stock. Trade pricing for interior designers furnishing whole homes. Browse the full collection and request pricing." />
 <meta name="theme-color" content="#F5EFE6" />
 <link rel="canonical" href="https://fourmusescollections.com/" />
 
@@ -16,8 +16,8 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Four Muses" />
-<meta property="og:title" content="Four Muses — Heirloom Rugs, Made to Order" />
-<meta property="og:description" content="Heirloom rugs, hand-knotted to order in West Palm Beach. Each piece is begun only after it's claimed — never mass produced, never warehoused." />
+<meta property="og:title" content="Four Muses — Hand-Knotted Rugs for Interior Designers" />
+<meta property="og:description" content="271 hand-knotted rug designs, made to order, with select pieces in stock. Trade pricing for interior designers furnishing whole homes." />
 <meta property="og:url" content="https://fourmusescollections.com/" />
 <meta property="og:image" content="https://fourmusescollections.com/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -26,23 +26,16 @@
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Four Muses — Heirloom Rugs, Made to Order" />
-<meta name="twitter:description" content="Hand-knotted to order in West Palm Beach. Each piece begun only after it's claimed." />
+<meta name="twitter:title" content="Four Muses — Hand-Knotted Rugs for Interior Designers" />
+<meta name="twitter:description" content="271 hand-knotted rug designs, made to order. Trade pricing for interior designers." />
 <meta name="twitter:image" content="https://fourmusescollections.com/og-image.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<style>
-  /* Hero — taller on mobile so image and headline both have room */
-  .hero-img-wrap { aspect-ratio: 16/10; max-height: 88vh; }
-  @media (max-width: 900px) {
-    .hero-img-wrap { aspect-ratio: 4/5; max-height: none; }
-  }
-</style>
 </head>
-<body data-screen-label="Homepage">
+<body data-screen-label="Trade Landing">
 
 <header class="site-header">
   <div class="nav-bar">
@@ -54,64 +47,56 @@
       <span></span><span></span><span></span>
     </label>
     <nav class="nav-right">
-      <a href="collection.html">Shop</a>
-      <a href="#contact" class="nav-cta">Custom Rug</a>
-      <a href="#story">Our Story</a>
-      <a href="#craft">Craftsmanship</a>
-      <a href="#contact">Contact</a>
+      <a href="#collection">The Collection</a>
+      <a href="#trade">Trade Program</a>
+      <a href="#process">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Request Trade Pricing</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO — image dominant with overlay headline -->
-<section data-screen-label="Hero" style="background: var(--ivory); position: relative;">
-  <div class="hero-img-wrap" style="width: 100%; overflow: hidden; position: relative;">
-    <img src="hero-large.jpeg" alt="Hand-knotted rug in a luxury living space" style="width: 100%; height: 100%; object-fit: cover; object-position: 15% 95%; display: block;" />
-    <!-- stronger gradient for legibility -->
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 30%, rgba(20,20,22,0.45) 70%, rgba(20,20,22,0.78) 100%); pointer-events: none;"></div>
-    <!-- headline overlay, bottom-left -->
-    <div class="container" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: clamp(32px, 5vw, 72px); width: 100%;">
-      <div style="max-width: 760px; color: var(--ivory);">
-        <p class="eyebrow" style="color: rgba(255,255,255,0.95); margin-bottom: clamp(16px, 2.4vw, 28px); text-shadow: 0 1px 12px rgba(0,0,0,0.6);">Heirloom rugs · Hand-knotted to order</p>
-        <h1 class="display" style="font-size: clamp(40px, 5.6vw, 88px); line-height: 1; color: var(--ivory); text-shadow: 0 2px 28px rgba(0,0,0,0.55);"><em>The room<br/>begins at the floor.</em></h1>
+<!-- HERO -->
+<section class="hero-trade" data-hero data-screen-label="Hero">
+  <div class="hero-img-wrap">
+    <img src="hero-large.jpeg" alt="Hand-knotted rug in a luxury living space" />
+    <div class="hero-shade"></div>
+    <div class="container hero-overlay">
+      <p class="eyebrow">To the trade · Hand-knotted rugs</p>
+      <h1 class="display"><em>Every room,<br/>sourced in one place.</em></h1>
+      <p class="hero-sub"><span data-rug-count>271</span> hand-knotted designs, made to order by our artisans in India, with select pieces in stock and ready to ship. Trade pricing for interior designers furnishing whole homes.</p>
+      <div class="hero-actions">
+        <a href="#collection" class="btn btn-solid">Browse the collection</a>
+        <a href="#contact" class="btn">Request trade pricing</a>
       </div>
     </div>
   </div>
-  <div class="container" style="padding-top: 56px; padding-bottom: 56px; border-bottom: 1px solid var(--hairline);">
-    <p class="lede" style="max-width: 56ch;">Handcrafted by artisans in India, Nepal, Afghanistan and Turkey.</p>
-  </div>
 </section>
 
-<!-- MARQUEE -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>
-      <em>Hand-knotted</em><i class="dot"></i>
-      <em>Made to order</em><i class="dot"></i>
-      <em>Natural fibers</em><i class="dot"></i>
-      <em>Heirloom quality</em><i class="dot"></i>
-    </span>
-    <span>
-      <em>Hand-knotted</em><i class="dot"></i>
-      <em>Made to order</em><i class="dot"></i>
-      <em>Natural fibers</em><i class="dot"></i>
-      <em>Heirloom quality</em><i class="dot"></i>
-    </span>
+<!-- FACTS -->
+<div class="container">
+  <div class="stats">
+    <div class="stat"><span class="n" data-rug-count>271</span><span class="l">Designs in the collection</span></div>
+    <div class="stat"><span class="n" data-stock-count>23</span><span class="l">Designs in stock now</span></div>
+    <div class="stat"><span class="n">8–10 weeks</span><span class="l">Made-to-order lead time</span></div>
+    <div class="stat"><span class="n">Trade</span><span class="l">Pricing for designers</span></div>
   </div>
 </div>
 
-<!-- STORY -->
-<section class="section" id="story" data-screen-label="Our Story">
+<!-- TRADE PROGRAM -->
+<section class="section" id="trade" data-screen-label="Trade Program">
   <div class="container">
     <div class="story-grid">
       <div class="story-text">
-        <p class="eyebrow">Our Story</p>
-        <h2 class="display"><em>A quiet devotion to craft.</em></h2>
-        <p class="lede">Each rug is thoughtfully designed in our West Palm Beach studio and brought to life by master artisans all over the world who have spent generations refining their craft. We work in small editions, with natural fibers, and with the patience that hand-knotting demands.</p>
-        <p>What arrives at your door is not a product. It is the quiet result of hundreds of hours, the hands of master artisans, and a story we hope becomes part of yours.</p>
-        <a href="#craft" class="btn-quiet" style="margin-top: 16px; display: inline-block;">
-          <span class="eyebrow">Learn the Process →</span>
-        </a>
+        <p class="eyebrow">The Trade Program</p>
+        <h2 class="display"><em>Built for designers<br/>furnishing whole homes.</em></h2>
+        <p class="lede">Specify the living room, the dining room and every bedroom from one collection, in one request. Every design is hand-knotted to order, and select pieces are in stock for projects that can't wait.</p>
+        <dl class="trade-list">
+          <div><dt>Made to order</dt><dd>Every design is hand-knotted to order by our artisans in India, with an 8–10 week lead time.</dd></div>
+          <div><dt>Select pieces in stock</dt><dd><span data-stock-count>23</span> traditional designs are in stock now and ship through our drop-ship program. When a size sells through, it's made to order.</dd></div>
+          <div><dt>Trade pricing</dt><dd>Pricing for interior designers and home-furnishing firms. Request it with your first inquiry.</dd></div>
+          <div><dt>One request, every room</dt><dd>Shortlist every rug the project needs and send it as a single request.</dd></div>
+        </dl>
       </div>
       <div class="story-image img-cell" style="aspect-ratio: 4/5;">
         <img src="story-image.jpeg" alt="Hand-knotted ivory rug grounding a serene minimalist interior" style="object-position: center 92%; transform: scale(1.5); transform-origin: center 92%;" />
@@ -120,86 +105,120 @@
   </div>
 </section>
 
-<hr class="hairline" style="max-width: calc(100% - 2 * var(--gutter)); margin: 0 auto;">
-
-<!-- PORTFOLIO — Kinga's real interior design projects -->
-<section class="section" id="portfolio" data-screen-label="Portfolio" style="padding-top: 48px; padding-bottom: 96px;">
+<!-- HOW IT WORKS -->
+<section class="section craft" id="process" data-screen-label="How It Works" style="padding-top: clamp(64px, 8vw, 120px); padding-bottom: clamp(64px, 8vw, 120px);">
   <div class="container">
-    <div style="text-align: center; margin-bottom: 32px;">
-      <h2 class="display" style="margin: 0;"><em>Our Rugs</em></h2>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 1400px; margin-left: auto; margin-right: auto;" class="portfolio-grid">
-      <figure style="margin: 0;">
-        <div class="img-cell" style="aspect-ratio: 4/5; background: var(--bone);">
-          <img src="portfolio-rug-detail-3.jpg" alt="Hand-knotted rug detail — ivory grid pattern" style="object-fit: cover;" />
-        </div>
-      </figure>
-      <figure style="margin: 0;">
-        <div class="img-cell" style="aspect-ratio: 4/5; background: var(--bone);">
-          <img src="portfolio-rug-detail.png" alt="Hand-knotted rug detail — chocolate pile with ivory line work" style="object-fit: cover;" />
-        </div>
-      </figure>
-      <figure style="margin: 0;">
-        <div class="img-cell" style="aspect-ratio: 4/5; background: var(--bone);">
-          <img src="portfolio-rug-detail-4.jpg" alt="Hand-knotted rug detail — grey and ivory abstract" style="object-fit: cover;" />
-        </div>
-      </figure>
-    </div>
-
-    <div style="margin-top: 56px; text-align: center;">
-      <a href="#contact" class="btn">Inquire about a fully custom rug</a>
-    </div>
-  </div>
-</section>
-
-<!-- CRAFTSMANSHIP -->
-<section class="section craft" id="craft" data-screen-label="Craftsmanship">
-  <div class="container">
-    <div class="craft-grid">
-      <div class="craft-image img-cell" style="aspect-ratio: 5/6;">
-        <img src="detail-large-1.jpg" alt="Master artisan hand-knotting at the loom" />
-      </div>
-      <div class="craft-text">
-        <p class="eyebrow">Craftsmanship</p>
-        <h2 class="display"><em>Made to order,<br/>made to last.</em></h2>
-        <p style="color: var(--graphite); margin-top: 24px; max-width: 50ch;">Every Four Muses rug is begun only after it has been claimed. Nothing sits in a warehouse. Nothing is mass produced. Nothing leaves our partner workshops without passing through four pairs of careful hands.</p>
-        <p style="color: var(--graphite); margin-top: 16px; max-width: 50ch;">From the first dye bath to the final wash, we honor the slowness that gives a rug its soul.</p>
-      </div>
-    </div>
-
+    <p class="eyebrow">How It Works</p>
+    <h2 class="display" style="margin-top: 20px;"><em>From shortlist to install.</em></h2>
     <div class="craft-steps">
       <div class="craft-step">
         <span class="num">01</span>
-        <h4>Consult</h4>
-        <p>We help you choose the design, palette, and dimensions that suit your space.</p>
+        <h4>Shortlist</h4>
+        <p>Browse the full collection below and add every rug the project needs.</p>
       </div>
       <div class="craft-step">
         <span class="num">02</span>
-        <h4>Source</h4>
-        <p>Wool, silk, and natural dyes are gathered from trusted, traceable sources.</p>
+        <h4>Send</h4>
+        <p>Submit your shortlist with the project details. One request covers the whole home.</p>
       </div>
       <div class="craft-step">
         <span class="num">03</span>
-        <h4>Weave</h4>
-        <p>Master artisans knot every rug by hand &mdash; a process measured in weeks, not minutes.</p>
+        <h4>Confirm</h4>
+        <p>We confirm availability, timing and trade pricing within two business days.</p>
       </div>
       <div class="craft-step">
         <span class="num">04</span>
         <h4>Deliver</h4>
-        <p>Your finished rug is carefully packed and shipped white-glove to your door.</p>
+        <p>In-stock pieces drop-ship. Everything else is hand-knotted to order in India in 8–10 weeks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="section" id="collection" data-screen-label="Collection" style="padding-top: clamp(64px, 8vw, 120px);">
+  <div class="container">
+    <div class="col-head">
+      <div>
+        <p class="eyebrow">The Collection</p>
+        <h2 class="display" style="margin-top: 20px;"><em><span data-rug-count>271</span> hand-knotted designs.</em></h2>
+      </div>
+      <p class="col-note">Rugs marked in stock are ready to ship. Everything else is made to order in 8–10 weeks. Every design carries a Four Muses reference number: shortlist what suits the project and we'll confirm availability, timing and trade pricing.</p>
+    </div>
+
+    <div class="rug-filters">
+      <div class="loc-tabs" role="group" aria-label="Availability">
+        <button type="button" data-avail="all" aria-pressed="true">All designs</button>
+        <button type="button" data-avail="stock" aria-pressed="false">In stock</button>
+        <button type="button" data-avail="mto" aria-pressed="false">Made to order</button>
+      </div>
+      <div class="rug-selects">
+        <label>Size
+          <select id="f-size">
+            <option value="all">All sizes</option>
+            <option>6′ × 9′</option>
+            <option>8′ × 10′</option>
+            <option>9′ × 12′</option>
+            <option>10′ × 14′</option>
+            <option>12′ × 15′</option>
+            <option value="other">Other sizes</option>
+          </select>
+        </label>
+        <label>Fiber
+          <select id="f-fiber">
+            <option value="all">All fibers</option>
+            <option value="wool">Wool</option>
+            <option value="silk">Silk</option>
+            <option value="viscose">Viscose</option>
+            <option value="jute">Jute</option>
+            <option value="linen">Linen</option>
+            <option value="nylon">Nylon</option>
+          </select>
+        </label>
+        <label class="rug-search">Search
+          <input id="f-q" type="search" placeholder="Ref or color" autocomplete="off">
+        </label>
+      </div>
+    </div>
+    <p class="eyebrow rug-count" id="rug-count" aria-live="polite"></p>
+
+    <div class="rug-grid" id="rug-grid"></div>
+    <div class="rug-empty" id="rug-empty" hidden>
+      <p>No rugs match those filters.</p>
+      <button type="button" class="btn" id="rug-reset">Show all rugs</button>
+    </div>
+    <p class="rug-disclaimer">In-stock availability varies and is subject to prior sale. Sizes are approximate.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section craft" id="about" data-screen-label="About">
+  <div class="container">
+    <div class="craft-grid">
+      <div class="craft-image img-cell" style="aspect-ratio: 5/6;">
+        <img src="detail-large-1.jpg" alt="Master artisan hand-knotting at the loom" loading="lazy" />
+      </div>
+      <div class="craft-text">
+        <p class="eyebrow">About Four Muses</p>
+        <h2 class="display"><em>A quiet devotion<br/>to craft.</em></h2>
+        <p style="color: var(--graphite); margin-top: 24px; max-width: 50ch;">Four Muses is a West Palm Beach rug house. Our rugs are hand-knotted by master artisans in India, Nepal, Afghanistan and Turkey, in wool, silk and viscose, and finished by hand.</p>
+        <p style="color: var(--graphite); margin-top: 16px; max-width: 50ch;">Every design in the collection can be made to order, and we keep select pieces in stock for projects on a tight schedule. Need a size or palette we don't carry? We design custom rugs for trade clients too.</p>
+        <a href="#contact" class="btn-quiet" style="margin-top: 24px; display: inline-block;">
+          <span class="eyebrow">Ask about custom →</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section" id="contact" style="background: var(--bone);" data-screen-label="Contact">
+<section class="section" id="contact" data-screen-label="Contact">
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info">
-        <p class="eyebrow">Contact</p>
-        <h2 class="display"><em>Tell us about<br/>your rug vision.</em></h2>
-        <p class="lede" style="margin-top: 24px;">Whether you have a single rug in mind, an entire home to fill with rugs, or simply a question about the process — we'd love to hear from you!</p>
+        <p class="eyebrow">Request Trade Pricing</p>
+        <h2 class="display"><em>Tell us about<br/>the project.</em></h2>
+        <p class="lede" style="margin-top: 24px;">Send your shortlist and a few details about the home. We'll confirm availability, timing and trade pricing within two business days.</p>
 
         <div style="margin-top: 40px;">
           <div class="contact-detail"><span class="label">Studio</span><span class="value">West Palm Beach, Florida</span></div>
@@ -208,41 +227,55 @@
       </div>
 
       <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="_subject" value="New rug inquiry from fourmusescollections.com" />
+        <input type="hidden" name="_subject" value="New trade inquiry from fourmusescollections.com" />
+        <input type="hidden" name="Lead Source" id="lead-source" />
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="field-row">
-          <div class="field"><label for="fname">First Name</label><input id="fname" name="First Name" type="text" required></div>
-          <div class="field"><label for="lname">Last Name</label><input id="lname" name="Last Name" type="text" required></div>
+          <div class="field"><label for="fname">First Name</label><input id="fname" name="First Name" type="text" autocomplete="given-name" required></div>
+          <div class="field"><label for="lname">Last Name</label><input id="lname" name="Last Name" type="text" autocomplete="family-name" required></div>
         </div>
-        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
-        <div class="field"><label for="phone">Phone <span style="color: var(--graphite); font-size: 11px; letter-spacing: 0.12em;">(Optional)</span></label><input id="phone" name="Phone" type="tel"></div>
-        <div class="field">
-          <label>I am</label>
-          <div class="role-toggle" role="radiogroup" aria-label="I am">
-            <label class="role-option">
-              <input type="radio" name="I am" value="End User" checked>
-              <span>End User</span>
-            </label>
-            <label class="role-option">
-              <input type="radio" name="I am" value="Designer">
-              <span>Designer</span>
-            </label>
+        <div class="field"><label for="company">Firm / Company</label><input id="company" name="Company" type="text" autocomplete="organization"></div>
+        <div class="field-row">
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="phone">Phone</label><input id="phone" name="Phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="role">I am a</label>
+            <select id="role" name="Role">
+              <option>Interior designer</option>
+              <option>Home stager</option>
+              <option>Builder / developer</option>
+              <option>Furniture or design retailer</option>
+              <option>Homeowner</option>
+            </select>
+          </div>
+          <div class="field"><label for="qty">Rugs needed</label>
+            <select id="qty" name="Rugs Needed">
+              <option>1–2</option>
+              <option selected>3–5</option>
+              <option>6–10</option>
+              <option>10+</option>
+            </select>
           </div>
         </div>
-        <div class="field"><label for="interest">I'm Interested In</label>
-          <select id="interest" name="Interested In">
-            <option>A custom rug</option>
-            <option>A Four Muses rug</option>
-            <option>Trade program</option>
-          </select>
+        <div class="field-row">
+          <div class="field"><label for="location">Project location</label><input id="location" name="Project Location" type="text" placeholder="City, State"></div>
+          <div class="field"><label for="timeline">Timeline</label>
+            <select id="timeline" name="Timeline">
+              <option>As soon as possible</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>Just exploring</option>
+            </select>
+          </div>
         </div>
-        <div class="field"><label for="message">Tell us about your rug vision</label><textarea id="message" name="Message" placeholder="Dimensions and color — anything helps."></textarea></div>
+        <div class="field"><label for="refs">Rugs you're interested in</label><input id="refs" name="Reference Numbers" type="text" placeholder="e.g. GA-01, NY-114 (or use the shortlist)"></div>
+        <div class="field"><label for="message">Project details</label><textarea id="message" name="Message" placeholder="Rooms, sizes, palette, install date. Anything helps."></textarea></div>
         <div class="field">
-          <label for="inspiration">Attach an inspiration image of your rug</label>
-          <input id="inspiration" name="Inspiration Image" type="file" accept="image/*,.heic,.heif" style="font-family: var(--sans-meta); font-size: 13px; padding: 14px 0; color: var(--graphite); border: none; border-bottom: 1px solid var(--hairline); background: transparent; width: 100%;">
+          <label for="attachment">Attach a floor plan or mood board <span style="text-transform: none; letter-spacing: 0;">(optional)</span></label>
+          <input id="attachment" name="Attachment" type="file" accept="image/*,.heic,.heif,.pdf" class="file-input">
         </div>
-        <div><button type="submit" class="btn btn-solid">Send Inquiry</button></div>
-        <p class="form-status eyebrow" style="display:none; color: var(--clay); margin-top: 8px;">Thank you — we'll be in touch within two business days.</p>
+        <div><button type="submit" class="btn btn-solid">Request Trade Pricing</button></div>
       </form>
     </div>
   </div>
@@ -253,16 +286,16 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="four-muses-logo.png" alt="Four Muses">
-        <p>Heirloom rugs, handcrafted to order in small editions. West Palm Beach, Florida.</p>
+        <p>Hand-knotted rugs, made to order and supplied to the trade. West Palm Beach, Florida.</p>
       </div>
-      <div class="footer-col"><h5>Shop</h5><ul>
-        <li><a href="collection.html">All Rugs</a></li>
+      <div class="footer-col"><h5>Collection</h5><ul>
+        <li><a href="#collection">The Collection</a></li>
+        <li><a href="#contact">Custom Rugs</a></li>
       </ul></div>
-      <div class="footer-col"><h5>About</h5><ul>
-        <li><a href="#story">Our Story</a></li>
-        <li><a href="#craft">Craftsmanship</a></li>
-        <li><a href="#contact">Trade Program</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <div class="footer-col"><h5>Trade</h5><ul>
+        <li><a href="#trade">Trade Program</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#about">About</a></li>
       </ul></div>
       <div class="footer-col"><h5>Contact Us</h5><ul>
         <li><a href="mailto:info@fourmusescollections.com">info@<br>fourmusescollections.com</a></li>
@@ -271,19 +304,57 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Four Muses Collections</span>
-      <span>Hand-knotted · Made to Order · West Palm Beach</span>
+      <span>Hand-knotted · Made to Order · To the Trade</span>
     </div>
   </div>
 </footer>
 
+<div class="shortlist-bar" id="shortlist-bar">
+  <div class="container shortlist-inner">
+    <p class="shortlist-text"><span class="eyebrow" id="sl-label">To the trade</span><span id="sl-refs"></span></p>
+    <div class="shortlist-actions">
+      <button type="button" id="sl-clear" hidden>Clear</button>
+      <a href="#contact" class="btn btn-solid" id="sl-cta">Request trade pricing</a>
+    </div>
+  </div>
+</div>
+
+<dialog class="rug-dialog" id="rug-dialog" aria-labelledby="rd-ref">
+  <div class="rd-media">
+    <div class="rd-main"><img id="rd-img" alt=""></div>
+    <div class="rd-thumbs" id="rd-thumbs"></div>
+  </div>
+  <div class="rd-info">
+    <div class="rd-top">
+      <p class="eyebrow" id="rd-loc"></p>
+      <div class="rd-pager">
+        <button type="button" id="rd-prev" aria-label="Previous rug">← Prev</button>
+        <button type="button" id="rd-next" aria-label="Next rug">Next →</button>
+        <button type="button" id="rd-close" aria-label="Close">Close ×</button>
+      </div>
+    </div>
+    <h2 class="display" id="rd-ref"></h2>
+    <div id="rd-specs"></div>
+    <div class="rd-actions">
+      <button type="button" class="btn btn-solid" id="rd-add">Add to shortlist</button>
+      <a href="#contact" class="btn" id="rd-inquire">Request this rug</a>
+    </div>
+    <p class="rd-note" id="rd-note"></p>
+  </div>
+</dialog>
+
+<script src="rugs.js" defer></script>
+<script src="collection.js" defer></script>
 <script>
-  // Close mobile nav when any link inside it is clicked
   (function() {
     var t = document.getElementById('mobile-nav-toggle');
-    if (!t) return;
-    document.querySelectorAll('.nav-right a').forEach(function(a) {
-      a.addEventListener('click', function() { t.checked = false; });
-    });
+    if (t) {
+      document.querySelectorAll('.nav-right a').forEach(function(a) {
+        a.addEventListener('click', function() { t.checked = false; });
+      });
+    }
+    var src = document.getElementById('lead-source');
+    if (src) src.value = location.search.slice(1) || document.referrer || 'direct';
   })();
 </script>
 
