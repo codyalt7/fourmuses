@@ -88,6 +88,12 @@
     apply();
   });
 
+  var preset = (location.search.match(/[?&]avail=(stock|mto)\b/) || [])[1];
+  if (preset) {
+    state.avail = preset;
+    tabs.forEach(function (x) { x.setAttribute('aria-pressed', x.dataset.avail === preset); });
+  }
+
   /* ---------- Shortlist ---------- */
   var bar = document.getElementById('shortlist-bar');
   var slLabel = document.getElementById('sl-label');
