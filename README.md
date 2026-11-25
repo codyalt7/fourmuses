@@ -6,27 +6,20 @@ Static HTML site for fourmusescollections.com.
 
 ```
 index.html        # Homepage
-collection.html   # Shop / collections page
+collection.html   # Redirects to the collection section on index.html
+collection.js     # Collection grid, filters, shortlist, rug detail view
+rugs.js           # Rug data: one entry per design; [size, qty] = in stock, [size] = made to order
 styles.css        # Shared styles
-assets/           # All images, logo, favicon, OG share image
+assets/rugs/      # Rug photos extracted from the catalog
 ```
 
-## Before you go live — one thing to wire up
+## Contact form
 
-The contact form on `index.html` is set up to use **Formspree** (free up to 50 submissions/mo).
-You need to:
+The inquiry form on `index.html` posts to **FormSubmit** (free, no account), which emails each submission to `kinga@fourmusescollections.com`, including any attached file.
 
-1. Sign up at https://formspree.io with `info@fourmusescollections.com`.
-2. Create a new form.
-3. Copy your form ID (looks like `xyzabcde`).
-4. Open `index.html` and find this line:
-   ```html
-   <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" ...>
-   ```
-5. Replace `YOUR_FORM_ID` with your real form ID.
-6. Save, commit, push.
-
-That's it — submissions will arrive as email at info@fourmusescollections.com, including the attached inspiration image.
+- The very first submission triggers an activation email to that address. Click **Activate Form** in it, or no submissions will be delivered.
+- To change the recipient, edit the form's `action` URL: `https://formsubmit.co/<email>`.
+- After submitting, visitors return to `/?sent=1#contact` and see a thank-you message.
 
 ## Deploying to GitHub Pages
 

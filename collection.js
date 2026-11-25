@@ -218,4 +218,12 @@
 
   apply();
   render();
+
+  var target = location.hash && document.getElementById(location.hash.slice(1));
+  if (target) {
+    var html = document.documentElement;
+    html.style.scrollBehavior = 'auto';
+    target.scrollIntoView();
+    html.style.scrollBehavior = '';
+  }
 })();

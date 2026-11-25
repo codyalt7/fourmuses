@@ -226,10 +226,13 @@
         </div>
       </div>
 
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+      <form class="contact-form" id="contact-form" action="https://formsubmit.co/kinga@fourmusescollections.com" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_subject" value="New trade inquiry from fourmusescollections.com" />
+        <input type="hidden" name="_next" value="https://fourmusescollections.com/?sent=1#contact" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="Lead Source" id="lead-source" />
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="field-row">
           <div class="field"><label for="fname">First Name</label><input id="fname" name="First Name" type="text" autocomplete="given-name" required></div>
           <div class="field"><label for="lname">Last Name</label><input id="lname" name="Last Name" type="text" autocomplete="family-name" required></div>
@@ -277,6 +280,11 @@
         </div>
         <div><button type="submit" class="btn btn-solid">Request Trade Pricing</button></div>
       </form>
+      <div class="form-sent" id="form-sent" hidden>
+        <p class="eyebrow">Inquiry received</p>
+        <h3 class="display"><em>Thank you.</em></h3>
+        <p>We'll confirm availability, timing and trade pricing within two business days.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -352,6 +360,11 @@
       document.querySelectorAll('.nav-right a').forEach(function(a) {
         a.addEventListener('click', function() { t.checked = false; });
       });
+    }
+    if (/[?&]sent=1/.test(location.search)) {
+      document.getElementById('contact-form').hidden = true;
+      document.getElementById('form-sent').hidden = false;
+      try { localStorage.removeItem('fm-shortlist'); } catch (e) {}
     }
     var src = document.getElementById('lead-source');
     if (src) src.value = location.search.slice(1) || document.referrer || 'direct';

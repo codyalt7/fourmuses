@@ -740,6 +740,11 @@ h3.display { font-size: clamp(24px, 2.4vw, 36px); font-weight: 400; }
 .file-input { font-family: var(--sans-meta) !important; font-size: 13px !important; color: var(--graphite) !important; border-bottom: 1px solid var(--hairline) !important; padding: 14px 0 !important; }
 .field select { appearance: none; -webkit-appearance: none; border-radius: 0; background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%); background-position: calc(100% - 10px) 52%, calc(100% - 5px) 52%; background-size: 5px 5px; background-repeat: no-repeat; padding-right: 24px; }
 
+.contact-form[hidden], .form-sent[hidden] { display: none; }
+.form-sent { align-self: center; }
+.form-sent h3 { font-size: clamp(40px, 4.4vw, 64px); margin: 16px 0 20px; }
+.form-sent p:last-child { color: var(--graphite); max-width: 40ch; }
+
 /* Shortlist bar */
 .shortlist-bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 60; background: var(--ink); color: var(--ivory); transform: translateY(100%); transition: transform 0.35s ease; }
 .shortlist-bar.show { transform: none; }
